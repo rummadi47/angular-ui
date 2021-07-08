@@ -1,0 +1,64 @@
+.header-container {
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.header-tabs {
+  background-color: #d0d0d0;
+}
+
+.tab-text {
+  margin-left: 10px;
+}
+
+.tab-padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tab-contents {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ac-hub {
+  background-color: #eaeaea;
+  margin-left: 0.7rem !important;
+  margin-right: 0.7rem !important;
+}
+
+.p-0 {
+  padding: 0.1rem !important;
+}
+
+a {
+  color: #143565;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.active.header-tabs {
+  background-color: #23a0c5;
+}
+
+.active {
+  color: white;
+}
+
+.ac-hub-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

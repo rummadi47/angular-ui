@@ -1,0 +1,234 @@
+<div>
+    <h4>Customer Report</h4>
+    <hr>
+</div>
+
+<div class = "inputs-container">
+    <form [formGroup] = "customerReportForm" (ngSubmit)="onSubmit()">
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputContactInfo" class="col-sm-2 col-form-label">Contact Info</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputContactInfo" formControlName="contactInfo" required>
+                <div class = "error-messaging" *ngIf="contactInfo?.errors?.required">
+                    Contact Info is required.
+                </div>
+            </div>
+            <label for="inputCaseId" class="col-sm-2 col-form-label">CASE Id (*)</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCaseId" formControlName="caseID" required>
+                <div class = "error-messaging" *ngIf="caseID?.errors?.required">
+                    Case ID is required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputContactOption" class="col-sm-2 col-form-label">Contact Option</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputContactOption" formControlName="contactOption" required>
+                <div class = "error-messaging" *ngIf="contactOption?.errors?.required">
+                    Contact Option is required.
+                </div>
+            </div>
+            <label for="inputChannel" class="col-sm-2 col-form-label">Channel</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputChannel" formControlName="channel" required>
+                <div class = "error-messaging" *ngIf="channel?.errors?.required">
+                    Channel is required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputEmailId" class="col-sm-2 col-form-label">Email Id (*)</label>
+            <div class="col-sm-3">
+                <input type="email" class="form-control" id="inputEmailId" formControlName="emailID" email required>
+                <div class = "error-messaging" *ngIf="emailID?.errors?.required">
+                    Email ID is required.
+                </div>
+                <div class = "error-messaging" *ngIf="emailID?.errors?.email">
+                    Email ID needs to be in valid email format.
+                </div>
+            </div>
+            <label for="inputLoggedInSwitchName" class="col-sm-2 col-form-label">Logged In Switch Name</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputLoggedInSwitchName" formControlName="loggedInSwitchName" required>
+                <div class = "error-messaging" *ngIf="loggedInSwitchName?.errors?.required">
+                    Logged In Switch name is required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputRegion" class="col-sm-2 col-form-label">Region</label>
+            <div class="col-sm-3">
+                <select id="inputRegion" class="form-control" formControlName="region" required>
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class = "error-messaging" *ngIf="region?.errors?.required">
+                    Region is required.
+                </div>
+            </div>
+            <label for="inputLoggedInSwitchLocation" class="col-sm-2 col-form-label">Logged In Switch Location</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputLoggedInSwitchLocation" formControlName="loggedInSwitchLocation" required>
+                <div class = "error-messaging" *ngIf="loggedInSwitchLocation?.errors?.required">
+                    Logged In Switch Location required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputDsIdCountry" class="col-sm-2 col-form-label">DS ID Country</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDsIdCountry" formControlName="dsIDCountry" required>
+                <div class = "error-messaging" *ngIf="dsIDCountry?.errors?.required">
+                    DS ID Country required.
+                </div>
+            </div>
+            <label for="inputAdvisorDsId" class="col-sm-2 col-form-label">Advisor DS ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputAdvisorDsId" formControlName="advisorDsID" required>
+                <div class = "error-messaging" *ngIf="advisorDsID?.errors?.required">
+                    Advisor DS ID required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputDsIdLang" class="col-sm-2 col-form-label">DS ID Lang</label>
+            <div class="col-sm-3">
+                <select id="inputDsIdLang" class="form-control" formControlName="dsIDLang" required>
+                    <option selected>Choose...</option>
+                    <option>English</option>
+                    <option>Spanish</option>
+                </select>
+                <div class = "error-messaging" *ngIf="dsIDLang?.errors?.required">
+                    DS ID Lang required.
+                </div>
+            </div>
+            <label for="inputReasonCode" class="col-sm-2 col-form-label">Reason Code</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputReasonCode" formControlName="reasonCode" required>
+                <div class = "error-messaging" *ngIf="reasonCode?.errors?.required">
+                    Reason Code required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputGeo" class="col-sm-2 col-form-label">Geo</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputGeo" formControlName="geo" required>
+                <div class = "error-messaging" *ngIf="geo?.errors?.required">
+                    Geo required.
+                </div>
+            </div>
+            <label for="inputReasonDesc" class="col-sm-2 col-form-label">Reason Description</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputReasonDesc" formControlName="reasonDesc" required>
+                <div class = "error-messaging" *ngIf="reasonDesc?.errors?.required">
+                    Reason Description required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputAgentStation" class="col-sm-2 col-form-label">Agent Station</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputAgentStation" formControlName="agentStation" required>
+                <div class = "error-messaging" *ngIf="agentStation?.errors?.required">
+                    Agent Station required.
+                </div>
+            </div>
+            <label for="inputComments" class="col-sm-2 col-form-label">Comments</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputComments" formControlName="comments" required>
+                <div class = "error-messaging" *ngIf="comments?.errors?.required">
+                    Comments required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputCommitmentID" class="col-sm-2 col-form-label">Commitment ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCommitmentID" formControlName="commitmentID" required>
+                <div class = "error-messaging" *ngIf="commitmentID?.errors?.required">
+                    Commitment ID required.
+                </div>
+            </div>
+            <label for="inputObcInitiatedTs" class="col-sm-2 col-form-label">OBC Initiated Ts</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" id="inputObcInitiatedTs" formControlName="obcInitiatedTs" required>
+                <div class = "error-messaging" *ngIf="obcInitiatedTs?.errors?.required">
+                    OBC Initiated TS required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <label for="inputServer" class="col-sm-2 col-form-label">Target Server</label>
+            <div class="col-sm-3">
+                <select id="inputServer" class="form-control" formControlName="server" required>
+                    <option selected="true">Choose...</option>
+                    <option>UAT</option>
+                    <option>IT</option>
+                    <option>PROD</option>
+                </select>
+                <div class = "error-messaging" *ngIf="server?.errors?.required">
+                    Server required.
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <div class="col-sm-7">
+                <button class="btn btn-primary" type="submit" [disabled]="formDisabled()">Submit form</button>
+                <div class="spinner-border text-primary spinner-position" role="status" *ngIf="loadingSpinner">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <span *ngIf="successMark" class="success-messaging"><i class="fas fa-check"></i> {{successMessage}}</span>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </form>
+</div>

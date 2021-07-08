@@ -1,0 +1,455 @@
+<div>
+    <h4>Customer Support</h4>
+    <hr>
+</div>
+
+<div class = "inputs-container">
+    <form [formGroup] = "customerSupportForm" (ngSubmit)="onSubmit()">
+
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputFirstName" class="col-sm-2 col-form-label">First Name (*)</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputFirstName" formControlName="firstName">
+            </div>
+            <label for="inputAffectedProduct" class="col-sm-2 col-form-label">Affected Product</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputAffectedProduct" formControlName="affectedProduct">
+            </div>
+        </div>
+
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputContactInfo" class="col-sm-2 col-form-label">Contact Info (*)</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputContactInfo" formControlName="contactInfo">
+            </div>
+            <label for="inputContactOption" class="col-sm-2 col-form-label">Contact Option</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputContactOption" formControlName="contactOption">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputCustomerCompanyName" class="col-sm-2 col-form-label">Customer Company Name</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCustomerCompanyName" formControlName="customerCompanyName">
+            </div>
+            <label for="inputCustomerID" class="col-sm-2 col-form-label">Customer ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCustomerID" formControlName="customerId">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputCampaignName" class="col-sm-2 col-form-label">Campaign Name</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCampaignName" formControlName="campaignName">
+            </div>
+            <label for="inputCreateDate" class="col-sm-2 col-form-label">Create Date</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCreateDate" formControlName="createDate">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputIssue" class="col-sm-2 col-form-label">Issue</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputIssue" formControlName="issue">
+            </div>
+            <label for="inputIssueID" class="col-sm-2 col-form-label">Issue ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputIssueID" formControlName="issueId">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputLastName" class="col-sm-2 col-form-label">Last Name (*)</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputLastName" formControlName="lastName">
+            </div>
+            <label for="inputAffectedProductId" class="col-sm-2 col-form-label">Affected Product ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputAffectedProductId" formControlName="affectedProductId">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputPurchaseAgreementIndicator" class="col-sm-2 col-form-label">Purchase Agreement </label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputPurchaseAgreementIndicator" formControlName="purchaseAgreementIndicator">
+            </div>
+            <label for="inputPurchaseDate" class="col-sm-2 col-form-label">Purchase Date</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputPurchaseDate" formControlName="purchaseDate">
+            </div>
+        </div>
+
+
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputTransactionId" class="col-sm-2 col-form-label">Transaction Id (*)</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" id="inputTransactionId" formControlName="transactionId">
+            </div>
+            <label for="inputAgreementStartDate" class="col-sm-2 col-form-label">Agreement Start Date</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" id="inputAgreementStartDate" formControlName="agreementStartDate">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputIPAddress" class="col-sm-2 col-form-label">IP Address</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputIPAddress" formControlName="ipAddress">
+            </div>
+            <label for="inputAgreementEndDate" class="col-sm-2 col-form-label">Agreement End Date</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputAgreementEndDate" formControlName="agreementEndDate">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputChannel" class="col-sm-2 col-form-label">Channel</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputChannel" formControlName="channel">
+            </div>
+            <label for="inputAgreementType" class="col-sm-2 col-form-label">Agreement Type</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputAgreementType" formControlName="agreementType">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputCaseId" class="col-sm-2 col-form-label">CASE Id (*)</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCaseId" formControlName="caseId">
+            </div>
+            <label for="inputAgreementValid" class="col-sm-2 col-form-label">Agreement Valid</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputAgreementValid" formControlName="agreementValid">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputSkipCase" class="col-sm-2 col-form-label">Skip Case</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSkipCase" formControlName="skipCase">
+            </div>
+            <label for="inputSkipCaseReason" class="col-sm-2 col-form-label">Skip Case Reason</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSkipCaseReason" formControlName="skipCaseReason">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputGeo" class="col-sm-2 col-form-label">Geo</label>
+            <div class="col-sm-3">
+                <select id="inputGeo" class="form-control" formControlName="geo">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <label for="inputCaseType" class="col-sm-2 col-form-label">Case Type</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCaseType" formControlName="caseType">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputLanguage" class="col-sm-2 col-form-label">Language (*)</label>
+            <div class="col-sm-3">
+                <select id="inputLanguage" class="form-control" formControlName="language">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <label for="inputDsIdCountry" class="col-sm-2 col-form-label">DS ID Country</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDsIdCountry" formControlName="dsIdCountry">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputDsIdLang" class="col-sm-2 col-form-label">DS ID Lang</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDsIdLang" formControlName="dsIdLang">
+            </div>
+            <label for="inputRegion" class="col-sm-2 col-form-label">Region</label>
+            <div class="col-sm-3">
+                <select id="inputRegion" class="form-control" formControlName="region">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputAction" class="col-sm-2 col-form-label">Action</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputAction" formControlName="action">
+            </div>
+            <label for="inputRegionTarget" class="col-sm-2 col-form-label">Region Target</label>
+            <div class="col-sm-3">
+                <select id="inputRegionTarget" class="form-control" formControlName="regionTarget">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputCallType" class="col-sm-2 col-form-label">Call Type</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCallType" formControlName="callType">
+            </div>
+            <label for="inputServer" class="col-sm-2 col-form-label">Server</label>
+            <div class="col-sm-3">
+                <select id="inputServer" class="form-control" formControlName="server">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputCallingList" class="col-sm-2 col-form-label">Calling List</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputCallingList" formControlName="callingList">
+            </div>
+            <label for="inputClosingThresholdInMinutes" class="col-sm-2 col-form-label">Closing Threshold In Minutes</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputClosingThresholdInMinutes" formControlName="closingThresholdInMinutes">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputComponent" class="col-sm-2 col-form-label">Component</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputComponent" formControlName="component">
+            </div>
+            <label for="inputEligibleProduct" class="col-sm-2 col-form-label">Eligible Product</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputEligibleProduct" formControlName="eligibleProduct">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputComponentId" class="col-sm-2 col-form-label">Component ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputComponentId" formControlName="componentId" required>
+                <div class = "error-messaging" *ngIf="componentId?.errors?.required">
+                    Component ID is required.
+                </div>
+            </div>
+            <label for="inputEligibleProductID" class="col-sm-2 col-form-label">Eligible Product ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputEligibleProductID" formControlName="eligibleProductId" required>
+                <div class = "error-messaging" *ngIf="eligibleProductId?.errors?.required">
+                    Eligible Product ID is required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputDaysForCalls" class="col-sm-2 col-form-label">Days For Calls</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDaysForCalls" formControlName="daysForCalls">
+            </div>
+            <label for="inputDaysForCases" class="col-sm-2 col-form-label">Days For Cases</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDaysForCases" formControlName="daysForCases">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputDaysForRepairs" class="col-sm-2 col-form-label">Days For Repairs</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDaysForRepairs" formControlName="daysForRepairs">
+            </div>
+            <label for="inputDaysForSwitcher" class="col-sm-2 col-form-label">Days For Switcher</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDaysForSwitcher" formControlName="daysForSwitcher">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputExceptionDescription" class="col-sm-2 col-form-label">Exception Description</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputExceptionDescription" formControlName="exceptionDescription">
+            </div>
+            <label for="inputExceptionTypeApplied" class="col-sm-2 col-form-label">Exception Type Applied</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputExceptionTypeApplied" formControlName="exceptionTypeApplied">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputVirtualAdvisorGroup" class="col-sm-2 col-form-label">Virtual Advisor Group</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputVirtualAdvisorGroup" formControlName="virtualAdvisorGroup">
+            </div>
+            <label for="inputVirtualQueueGroup" class="col-sm-2 col-form-label">Virtual Queue Group</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputVirtualQueueGroup" formControlName="virtualQueueGroup">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputSmsCountryCode" class="col-sm-2 col-form-label">SMS Country Code</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSmsCountryCode" formControlName="smsCountryCode">
+            </div>
+            <label for="inputSmsEncryptedCasLink" class="col-sm-2 col-form-label">SMS Encrypted CAS Link</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSmsEncryptedCasLink" formControlName="smsEncryptedCasLink">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputSmsReminderOptIn" class="col-sm-2 col-form-label">SMS Reminder Opt In</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSmsReminderOptIn" formControlName="smsReminderOptIn">
+            </div>
+            <label for="inputSmsSurveyOptIn" class="col-sm-2 col-form-label">SMS Survey Opt In</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSmsSurveyOptIn" formControlName="smsSurveyOptIn">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputSmsLocale" class="col-sm-2 col-form-label">SMS Locale</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSmsLocale" formControlName="smsLocale">
+            </div>
+            <label for="inputSmsMobileNumber" class="col-sm-2 col-form-label">SMS Mobile Number</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSmsMobileNumber" formControlName="smsMobileNumber">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputDialFromTime" class="col-sm-2 col-form-label">Dial From Time</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDialFromTime" formControlName="dialFromTime">
+            </div>
+            <label for="inputDialScheduledTime" class="col-sm-2 col-form-label">Dial Scheduled Time</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDialScheduledTime" formControlName="dialScheduledTime">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputDialTillTime" class="col-sm-2 col-form-label">Dial Till Time</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputDialTillTime" formControlName="dialTillTime">
+            </div>
+            <label for="inputMaxRemoteAdvisor" class="col-sm-2 col-form-label">Max Remote Advisor</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputMaxRemoteAdvisor" formControlName="maxRemoteAdvisor">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputMemberName" class="col-sm-2 col-form-label">Member Name</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputMemberName" formControlName="memberName">
+            </div>
+            <label for="inputMultipleCallsLimit" class="col-sm-2 col-form-label">Multiple Calls Limit</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputMultipleCallsLimit" formControlName="multipleCallsLimit">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputMultipleCasesLimit" class="col-sm-2 col-form-label">Multiple Cases Limit</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputMultipleCasesLimit" formControlName="multipleCasesLimit">
+            </div>
+            <label for="inputMultipleRepairsLimit" class="col-sm-2 col-form-label">Multiple Repairs Limit</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputMultipleRepairsLimit" formControlName="multipleRepairsLimit">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputNewCustomerIndicator" class="col-sm-2 col-form-label">New Customer Indicator</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputNewCustomerIndicator" formControlName="newCustomerIndicator">
+            </div>
+            <label for="inputNumberOfCalls" class="col-sm-2 col-form-label">Multiple Repairs Limit</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputNumberOfCalls" formControlName="numberOfCalls">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputNumberOfCases" class="col-sm-2 col-form-label">Number of Cases</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputNumberOfCases" formControlName="numberOfCases">
+            </div>
+            <label for="inputNumberOfRepairs" class="col-sm-2 col-form-label">Number of Repairs</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputNumberOfRepairs" formControlName="numberOfRepairs">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputOverrideIndicator" class="col-sm-2 col-form-label">Override Indicator</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputOverrideIndicator" formControlName="overrideIndicator">
+            </div>
+            <label for="inputStoreID" class="col-sm-2 col-form-label">Store ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputStoreID" formControlName="storeId" required>
+                <div class = "error-messaging" *ngIf="storeId?.errors?.required">
+                    Store ID is required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputPlatform" class="col-sm-2 col-form-label">Platform</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputPlatform" formControlName="platform">
+            </div>
+            <label for="inputProductGroup" class="col-sm-2 col-form-label">Product Group</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputProductGroup" formControlName="productGroup">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputProductGroupId" class="col-sm-2 col-form-label">Product Group Id</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputProductGroupId" formControlName="productGroupId" required>
+                <div class = "error-messaging" *ngIf="productGroupId?.errors?.required">
+                    Product Group ID is required.
+                </div>
+            </div>
+            <label for="inputProductType" class="col-sm-2 col-form-label">Product Type</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputProductType" formControlName="productType">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputRiskFactor" class="col-sm-2 col-form-label">Risk Factor</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputRiskFactor" formControlName="riskFactor">
+            </div>
+            <label for="inputSafetyIssueIndicator" class="col-sm-2 col-form-label">Safety Issue Indicator</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSafetyIssueIndicator" formControlName="safetyIssueIndicator">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputScheduleNewContactInfo" class="col-sm-2 col-form-label">Schedule New Contact Info</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputScheduleNewContactInfo" formControlName="scheduleNewContactInfo">
+            </div>
+            <label for="inputSerialNumber" class="col-sm-2 col-form-label">Serial Number</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSerialNumber" formControlName="serialNumber">
+            </div>
+        </div>
+        <div class="form-group row justify-content-between row-padding">
+            <label for="inputSupportEntitlement" class="col-sm-2 col-form-label">Support Entitlement</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputSupportEntitlement" formControlName="supportEntitlement">
+            </div>
+            <label for="inputTimeZoneDatabaseId" class="col-sm-2 col-form-label">Timezone Database ID</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputTimeZoneDatabaseId" formControlName="timeZoneDatabaseId">
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-between row-padding">
+            <div class="col-sm-7">
+                <button class="btn btn-primary" type="submit" [disabled]="formDisabled()">Submit form</button>
+                <div class="spinner-border text-primary spinner-position" role="status" *ngIf="loadingSpinner">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <span *ngIf="successMark" class="success-messaging"><i class="fas fa-check"></i> {{successMessage}}</span>
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+    </form>
+</div>

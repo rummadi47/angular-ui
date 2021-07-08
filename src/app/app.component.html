@@ -1,0 +1,40 @@
+<div class = "header-container">
+  <div class="header">
+    KVP Values Submission
+  </div>
+</div>
+<div class="container">
+  <div class="row g-1 row-cols-auto">
+    <div class="col p-0">
+      <a routerLink="/customersupport">
+        <div class = "header-tabs" routerLinkActive="active">
+          <div class = "tab-padding">
+            <div class = "tab-contents">
+              <i class="fas fa-user"></i>
+              <span class = "tab-text">C2C/SCB</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col p-0">
+      <a routerLink="/customerreport">
+        <div class = "header-tabs" routerLinkActive="active">
+          <div class = "tab-padding">
+            <div class = "tab-contents">
+              <i class="fas fa-comments"></i>
+              <span class = "tab-text">OBCR</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row g1">
+    <div class = "ac-hub">
+      <div class="ac-hub-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
